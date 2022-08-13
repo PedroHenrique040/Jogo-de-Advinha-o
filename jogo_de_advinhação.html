@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+var numeroPensando = Math.round(Math.random() * 10);
+console.log(numeroPensando);
+
+var chute = parseInt(prompt("Chute um número de 0 a 10 tente a sorte de acertar :D"));
+
+if (chute  == numeroPensando) {
+
+    mostra("Parabéns! Você é muito sortudo.")
+} else {
+    mostra("Você errou. O número pensado foi " + numeroPensando + ". <br> Triste né? Tente de novo :D");
+}
+
+</script>
